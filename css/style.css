@@ -30,7 +30,6 @@
 }
 
 .sticky {
-  /*background-color: rgba(255, 255, 255, 0.93);*/
   background: url(../img/fondo.jpg) repeat center center fixed;
   opacity: 1;
   top: 0px;
@@ -38,7 +37,6 @@
 }
 
 .logo {
-  /*width: 50px;*/
   font-size: 40px;
   color: white;
   text-transform: uppercase;
@@ -470,55 +468,74 @@ p {
   width: 100%;
   height: 100%;
   position: relative;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
   cursor: default;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-.ch-thumb2 {
+.ch-info-wrap2, 
+.ch-info2{
+  position: absolute;
+  width: 280px;
+  height: 180px;
+}
+
+.ch-info-wrap2 {
+  top: 20px;
+  left: 20px;
+  background: #f9f9f9 url(../images/bg.jpg);
+  box-shadow: 
+    0 0 0 20px rgba(255,255,255,0.2), 
+    inset 0 0 3px rgba(115,114, 23, 0.8);
+
+}
+
+
+.ch-info2 > div {
+  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: absolute;
-  /*box-shadow: inset 0 0 0 15px rgba(15,27,37,0.4);*/
+  background-position: center center;
   
-  -webkit-transform-origin: 95% 40%;
-  -moz-transform-origin: 95% 40%;
-  -o-transform-origin: 95% 40%;
-  -ms-transform-origin: 95% 40%;
-  transform-origin: 95% 40%;
-  
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
 }
 
-.ch-thumb2:after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  border-radius: 50%;
-  top: 40%;
-  left: 95%;
-  margin: -4px 0 0 -4px;
-  background: rgb(14,14,14);
-  background: -moz-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(14,14,14,1)), color-stop(100%,rgba(125,126,125,1)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
-  background: radial-gradient(ellipse at center, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%);
-  box-shadow: 0 0 1px rgba(255,255,255,0.9);
+.ch-info2 .ch-info-front2 {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
+
+.ch-info2 .ch-info-back2 {
+  opacity: 0;
+
+  background: url(../img/fondo.jpg);
+  pointer-events: none;
+  
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+  -moz-transition: all 0.4s ease-in-out 0.2s;
+  -o-transition: all 0.4s ease-in-out 0.2s;
+  -ms-transition: all 0.4s ease-in-out 0.2s;
+  transition: all 0.4s ease-in-out 0.2s;
+}
+/*.ch-img-porta{
+  background: url(../img/fondo.jpg);
+}*/
 
 .ch-img-porta-1 { 
   background-image: url(../img/porta/agency-jade.png);
   z-index: 12;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-1 {
@@ -531,7 +548,7 @@ p {
   z-index: 11;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-2 {
@@ -544,7 +561,7 @@ p {
   z-index: 10;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-3 {
@@ -556,7 +573,7 @@ p {
   z-index: 12;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-4 {
@@ -568,7 +585,7 @@ p {
   z-index: 11;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-5 {
@@ -580,7 +597,7 @@ p {
   z-index: 10;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-6 {
@@ -592,7 +609,7 @@ p {
   z-index: 12;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-7 {
@@ -604,7 +621,7 @@ p {
   z-index: 11;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-8 {
@@ -616,30 +633,22 @@ p {
   z-index: 10;
   background-repeat: no-repeat;
   background: auto;
-  background-size: 350px 220px;
+  background-size: 320px 220px;
 }
 @media only screen and (max-width: 766px){
 .ch-img-porta-9 {
   background-size: 220px 220px;
   }
 }
-.ch-info2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  box-shadow: inset 0 0 0 5px rgba(0,0,0,0.05);
-  background-image: url(../img/fondo.jpg);
-}
+
 .ch-info2 h3 {
   color: #fff;
   text-transform: uppercase;
-  position: relative;
   letter-spacing: 2px;
   font-size: 18px;
-  margin: 0 30px;
-  padding: 22px 0 0 0;
-  height: 60px;
+  margin: 0 15px;
+  padding: 40px 0 0 0;
+  height: 80px;
   font-family: 'Open Sans', Arial, sans-serif;
   text-shadow: 
     0 0 1px #fff, 
@@ -653,9 +662,10 @@ p {
   }
 }
 
+
 .ch-info2 p {
   color: #fff;
-  padding: 10px 5px;
+  padding: 10px 5px 0;
   font-style: italic;
   margin: 0 30px;
   font-size: 12px;
@@ -668,72 +678,42 @@ p {
   }
 }
 
+
 .ch-info2 p a {
   display: block;
-  color: #333;
-  width: 80px;
-  height: 80px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 50%;
-  color: #fff;
+  color: #e7615e;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 9px;
   letter-spacing: 1px;
-  padding-top: 24px;
-  margin: 7px auto 0;
+  padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
-  opacity: 0;
-  
-  -webkit-transition: 
-    -webkit-transform 0.3s ease-in-out 0.2s,
-    opacity 0.3s ease-in-out 0.2s,
-    background 0.2s linear 0s;
-  -moz-transition: 
-    -moz-transform 0.3s ease-in-out 0.2s,
-    opacity 0.3s ease-in-out 0.2s,
-    background 0.2s linear 0s;
-  -o-transition: 
-    -o-transform 0.3s ease-in-out 0.2s,
-    opacity 0.3s ease-in-out 0.2s,
-    background 0.2s linear 0s;
-  -ms-transition: 
-    -ms-transform 0.3s ease-in-out 0.2s,
-    opacity 0.3s ease-in-out 0.2s,
-    background 0.2s linear 0s;
-  transition: 
-    transform 0.3s ease-in-out 0.2s,
-    opacity 0.3s ease-in-out 0.2s,
-    background 0.2s linear 0s;
-    
-  -webkit-transform: translateX(60px) rotate(90deg);
-  -moz-transform: translateX(60px) rotate(90deg);
-  -o-transform: translateX(60px) rotate(90deg);
-  -ms-transform: translateX(60px) rotate(90deg);
-  transform: translateX(60px) rotate(90deg);
-    
-  -webkit-backface-visibility: hidden;
 }
 
 .ch-info2 p a:hover {
-  background: rgba(255,255,255,0.5);
+  color: #fff;
 }
-.ch-item2:hover .ch-thumb2 {
-  /*box-shadow: inset 0 0 0 15px rgba(255,255,255, 0.5), 0 1px 3px rgba(0,0,0,0.2);*/
-  -webkit-transform: rotate(-150deg);
-  -moz-transform: rotate(-150deg);
-  -o-transform: rotate(-150deg);
-  -ms-transform: rotate(-150deg);
-  transform: rotate(-150deg);
-}
-.ch-item2:hover .ch-info2 p a{
+
+.ch-item2:hover .ch-info-front2 {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  
+  opacity: 0;
+} 
+
+.ch-item2:hover .ch-info-back2 {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  
   opacity: 1;
-  -webkit-transform: translateX(0px) rotate(0deg);
-  -moz-transform: translateX(0px) rotate(0deg);
-  -o-transform: translateX(0px) rotate(0deg);
-  -ms-transform: translateX(0px) rotate(0deg);
-  transform: translateX(0px) rotate(0deg);
+  pointer-events: auto;
 }
 /*contacto*/
 .contacto h1{

@@ -33,18 +33,8 @@
 	width: 100%;
 }
 
-.ch-grid2:after,
-.ch-item:before {
-	content: '';
-    display: table;
-}
-
-.ch-grid2:after {
-	clear: both;
-}
-
 .ch-grid2 li {
-	width: 350px;
+	width: 320px;
 	height: 220px;
 	display: inline-block;
 	margin: 15px;
