@@ -1,4 +1,4 @@
-/**{outline: 1px solid black;}*/
+*{outline: 1px solid black;}
 
 .main_h {
   position: fixed;
@@ -46,6 +46,11 @@
   line-height: 1;
   margin-bottom: 10px;
 }
+.menuHover:hover{
+
+  color: #e8f380;
+  text-decoration: none;
+}
 @media only screen and (max-width: 766px) {
   .logo {
     float: none;
@@ -80,6 +85,7 @@ nav ul li {
   display: inline-block;
   margin-left: 35px;
   line-height: 1.5;
+
 }
 @media only screen and (max-width: 766px) {
   nav ul li {
@@ -109,6 +115,7 @@ nav ul a {
 @media only screen and (max-width: 766px) {
   .mobile-toggle {
     display: block;
+    margin-top: 20px;
   }
 }
 .mobile-toggle span {
@@ -123,14 +130,6 @@ nav ul a {
 * {
   box-sizing: border-box;
 }
-
-/*body {
-  color: #8f8f8f;
-  background: white;
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-}*/
 
 a {
   text-decoration: none;
@@ -226,7 +225,6 @@ p {
   -webkit-animation-name: scroll;
   animation-name: scroll;
 }
-.m
 
 @-webkit-keyframes scroll {
   0% {
@@ -258,12 +256,17 @@ p {
 /*inicia sobre mi*/
 .sobre-mi{
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 .yo{
   padding-top: 4%;
 }
 .yo p{
   padding: 12%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.5px;
 }
 .foto img{
   width: 50%;
@@ -272,13 +275,16 @@ p {
   border-radius: 25% 0%;
 }
 .foto{
-  padding: 10%;
+  padding-top: 150px;
 }
 
 @media only screen and (max-width: 766px){
   .sobre-mi p{
-    font-size: 12px;
+    font-size: 14px;
     padding: 1%;
+  }
+  .foto{
+    padding-top: 50px;
   }
   .foto img{
   width: 100%;
@@ -290,6 +296,11 @@ p {
 
 
 /*inicia habilidades*/
+.habilidades ul{
+  margin-top: 0px;
+  margin-bottom: 70px;
+
+}
 .ch-item {
   width: 100%;
   height: 100%;
@@ -341,7 +352,6 @@ p {
   -o-transform: translate3d(0,0,-190px) rotate3d(1,0,0,90deg);
   -ms-transform: translate3d(0,0,-190px) rotate3d(1,0,0,90deg);
   transform: translate3d(0,0,-190px) rotate3d(1,0,0,90deg);
-  /*background: #000;*/
   background-image: url(../img/fondo.jpg);
   opacity: 0;
 }
@@ -464,6 +474,9 @@ p {
   opacity: 1;
 }
 /*inicio portafolio*/
+.portafolio ul{
+  margin-top: 0px;
+}
 .ch-item2 {
   width: 100%;
   height: 100%;
@@ -488,7 +501,6 @@ p {
     inset 0 0 3px rgba(115,114, 23, 0.8);
 
 }
-
 
 .ch-info2 > div {
   display: block;
@@ -526,13 +538,15 @@ p {
   -ms-transition: all 0.4s ease-in-out 0.2s;
   transition: all 0.4s ease-in-out 0.2s;
 }
-/*.ch-img-porta{
-  background: url(../img/fondo.jpg);
-}*/
+@media only screen and (max-width: 766px){
+  .ch-info2 .ch-info-back2{
+    background-size: 120px 120px;
+  }
+}
 
 .ch-img-porta-1 { 
   background-image: url(../img/porta/agency-jade.png);
-  z-index: 12;
+  /*z-index: 12;*/
   background-repeat: no-repeat;
   background: auto;
   background-size: 320px 220px;
@@ -605,7 +619,7 @@ p {
   }
 }
 .ch-img-porta-7 { 
-  background-image: url(../img/porta/primes-exa-grupal.png);
+  background-image: url(../img/porta/primes-exa-grup.png);
   z-index: 12;
   background-repeat: no-repeat;
   background: auto;
@@ -718,7 +732,15 @@ p {
 /*contacto*/
 .contacto h1{
   margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+
 }
+.contacto p{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .contacto ul li{
   display: inline-block;
   background-image: url(../img/fondo.jpg);
