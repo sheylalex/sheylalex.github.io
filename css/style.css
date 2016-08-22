@@ -267,13 +267,6 @@ p {
 }
 
 /*inicia sobre mi*/
-/*.sobre-mi{
-   background: url(../img/fondo3.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-   height: 100vh;
-}*/
 
 .yo{
   padding-top: 4%;
@@ -313,14 +306,6 @@ p {
 
 
 /*inicia habilidades*/
-/*.sec02{
-   background: url(../img/fondo5.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-   height: 100vh;
-}*/
-
 .habilidades ul{
   margin-top: 0px;
   margin-bottom: 70px;
