@@ -254,17 +254,15 @@ p {
 }
 
 /*inicia sobre mi*/
-/*.sec01{
+.sobre-mi{
    background: url(../img/fondo4.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+   height: 100vh;
+
 }
-*/
-.sobre-mi{
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
+
 .yo{
   padding-top: 4%;
 }
@@ -480,6 +478,9 @@ p {
   transform: rotate3d(1,0,0,0deg);
   opacity: 1;
 }
+
+
+
 /*inicio portafolio*/
 .portafolio ul{
   margin-top: 0px;
@@ -545,11 +546,6 @@ p {
   -ms-transition: all 0.4s ease-in-out 0.2s;
   transition: all 0.4s ease-in-out 0.2s;
 }
-@media only screen and (max-width: 766px){
-  .ch-info2 .ch-info-back2{
-    background-size: 120px 120px;
-  }
-}
 
 .ch-img-porta-1 { 
   background-image: url(../img/porta/agency-jade.png);
@@ -558,11 +554,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-1 {
-  background-size: 220px 220px;
-  }
-}
+
 
 .ch-img-porta-2 { 
   background-image: url(../img/porta/cinema.png);
@@ -571,11 +563,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-2 {
-  background-size: 220px 220px;
-  }
-}
+
 
 .ch-img-porta-3 { 
   background-image: url(../img/porta/escuela-danza.png);
@@ -584,11 +572,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-3 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-4 { 
   background-image: url(../img/porta/fashion-jade.png);
   z-index: 12;
@@ -596,11 +580,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-4 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-5 { 
   background-image: url(../img/porta/flat-responsing.png);
   z-index: 11;
@@ -608,11 +588,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-5 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-6 { 
   background-image: url(../img/porta/grid-system.png);
   z-index: 10;
@@ -620,11 +596,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-6 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-7 { 
   background-image: url(../img/porta/primes-exa-grup.png);
   z-index: 12;
@@ -632,11 +604,7 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-7 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-8 { 
   background-image: url(../img/porta/ecomunidad.png);
   z-index: 11;
@@ -644,22 +612,13 @@ p {
   background: auto;
   background-size: 320px 220px;
 }
-@media only screen and (max-width: 766px){
-.ch-img-porta-8 {
-  background-size: 220px 220px;
-  }
-}
+
 .ch-img-porta-9 { 
   background-image: url(../img/porta/centro-investigacion.png);
   z-index: 10;
   background-repeat: no-repeat;
   background: auto;
   background-size: 320px 220px;
-}
-@media only screen and (max-width: 766px){
-.ch-img-porta-9 {
-  background-size: 220px 220px;
-  }
 }
 
 .ch-info2 h3 {
