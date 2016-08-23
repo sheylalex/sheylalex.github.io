@@ -702,11 +702,16 @@ p {
 }
 /*contacto*/
 .contacto{
-   background: url(../img/fondo7.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-/*   height: 100vh;*/
+   background: url(../img/fondo10.jpg) no-repeat center center fixed;
+   /*opacity: 0.5;*/
+  /* background-size: 40%;
+   background-position: left;*/
+}
+.capa{
+background-color: rgba(9, 22, 37, 0.5);
+}
+.text-white{
+  color: white;
 }
 
 .contacto h1{
@@ -729,7 +734,7 @@ p {
   margin-left: 2%;
 }
 .contacto a{
-  color: black;
+  color: white;
 }
 .follow-icons{
   padding-top: 10%;
