@@ -1,9 +1,12 @@
+
+
 /**{outline: 1px solid black;}*/
 
 body{
   margin: 0px;
   padding: 0px;
 }
+
 .main_h {
   position: fixed;
   max-height: 70px;
@@ -539,11 +542,11 @@ p {
   background: url(../img/fondo.jpg);
   pointer-events: none;
   
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -o-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   
   -webkit-transition: all 0.4s ease-in-out 0.2s;
   -moz-transition: all 0.4s ease-in-out 0.2s;
@@ -749,6 +752,11 @@ footer{
 footer p{
   color: white;
 }
+
+
+
+
+
 @media only screen and (max-width: 766px){
   footer p{
     font-size: 12px;
