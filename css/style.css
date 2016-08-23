@@ -180,7 +180,7 @@ p {
   color: #fff;
   padding-top: 200px;
   height: 100vh;
-  /*min-height: 300px;*/
+  min-height: 300px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
@@ -703,12 +703,10 @@ p {
 /*contacto*/
 .contacto{
    background: url(../img/fondo10.jpg) no-repeat center center fixed;
-   /*opacity: 0.5;*/
-  /* background-size: 40%;
-   background-position: left;*/
 }
 .capa{
 background-color: rgba(9, 22, 37, 0.5);
+
 }
 .text-white{
   color: white;
