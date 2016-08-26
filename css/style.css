@@ -295,15 +295,22 @@ p {
 }
 .swiper-container {
     width: 100%;
-    height: 340px;
+    height: 280px;
     border: 10px solid white;
 }  
 .swiper-container img {
     width: 100%;
-    height: 340px;
+    height: 280px;
 }
 
 
+@media only screen and (max-width: 766px){
+.marco{
+  margin-top: 10px;
+  background: url(../img/fondo.jpg) no-repeat center center fixed;
+  padding: 20px;
+ }
+}
 
 /*inicia habilidades*/
 .habilidades ul{
