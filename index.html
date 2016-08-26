@@ -12,10 +12,12 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
   </head>
 
@@ -52,12 +54,24 @@
         <div class="container sobre-mi">
             <div class="row yo ">
                 <div class="col-md-6">
-                <h1>SOBRE MI</h1>
+                <h1 class="text-center">SOBRE MI</h1>
                 <p>Hola, mi nombre es Sheyla, tengo 29 años y soy desarrolladora Front-end, coder de Laboratoria. 
                 Soy una joven innovadora, autodidacta dedicada a lo que me apasiona, dispuesta a aprender y comprometida con lo que me propongo, me gusta trabajar en equipo. Me interesa la tecnología, me apasiona la música. </p>
                 </div>
                 <div class="col-md-6 foto">
-                    <img class="img-responsive" src="img/sheyla-min.png">
+                    <div class="marco">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/yo10-min.jpg"></div>
+                                <div class="swiper-slide"><img src="img/yo11-min.jpg"></div>
+                                <div class="swiper-slide"><img src="img/yo12-min.jpg"></div>
+                                <div class="swiper-slide"><img src="img/yo13-min.jpg"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -336,8 +350,20 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="js/index.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/scritp.js"></script>
+    <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    autoplay:3000,
+    // If we need pagination
+    pagination: '.swiper-pagination',
     
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+  })        
+  </script>
   </body>
 </html>
